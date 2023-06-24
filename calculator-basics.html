@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>JS Tip Calculator</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="logo"><img src="./images/logo.svg" alt=""></div>
+  <div class="tipCalculator">
+    <div class="card">
+      <label for="">Bill</label>
+      <input class="input input-text" type="number" id="input-bill" placeholder="0.0">
+
+      <label for="">Select Tip %</label>
+
+      <div class="btn-wrapper">
+        <div class="btn">5%</div>
+        <div class="btn">10%</div>
+        <div class="btn btn-active">15%</div>
+        <div class="btn">25%</div>
+        <div class="btn">50%</div>
+        <div id="input-tip">
+          <input class="input-tip" type="number" placeholder="CUSTOM" />
+        </div>
+      </div>
+      <div class="peopleField">
+        <label for="">Number of People</label>
+        <label for="" class="error-message">
+          Can't be zero</label>
+      </div>
+
+      <input class=" input people-field" type="number" name="input-people" id="input-people" placeholder="1" />
+
+    </div>
+
+
+    <div class="output">
+
+
+      <div class="tip-amount" id="tip-amount">
+        <div class="text">
+          <p>Tip amount</p>
+          <div class="person">/ person</div>
+        </div>
+        <div class="amount">$4.27</div>
+      </div>
+
+
+      <div class="total-amount" id="total-amount">
+        <div class="text">
+          <p>Total</p>
+          <div class="person">/ person</div>
+        </div>
+        <div class="amount">$32.79</div>
+      </div>
+
+
+      <div class="btn-reset">RESET</div>
+    </div>
+  </div>
+
+  <script src="app.js"> </script>
+</body>
+
+</html>
