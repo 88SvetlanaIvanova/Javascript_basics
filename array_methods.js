@@ -65,3 +65,11 @@ console.log(grades);
 grades.fill(-1, 0, grades.length);
 console.log(grades);
 grades.copyWithin();
+let gradesB = [1, 2, 3, 40, 20, 10, 40];
+let tacos = grades.concat(gradesB);
+console.log(tacos);
+console.log(grades.includes(22));
+console.log(grades.indexOf(3));
+console.log(grades.join(" "));
+
+console.log(grades.slice(3, 5));
